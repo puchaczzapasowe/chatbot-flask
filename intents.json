@@ -1,0 +1,116 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Witam",
+        "Siema",
+        "Hejka",
+        "Dzień doberek",
+        "Czołem",
+        "Cześć wszystkim",
+        "Wesołych witerek",
+        "Witajcie",
+        "Dobry wieczór",
+        "Miło cię widzieć",
+        "Witaj na pokładzie",
+        "Dobry dzień",
+        "Dzień dobry wszystkim",
+        "Dobry ranek",
+        "Witaj serdecznie",
+        "Miłego dnia",
+        "Hej, co tam u ciebie?",
+        "Witam wszystkich serdecznie",
+        "Cześć, jak minął ci dzień?",
+        "Dzień dobry, mam nadzieję, że masz wspaniały dzień"
+      ],
+      "responses": [
+        "Hej :-)",
+        "Cześć, dzięki za odwiedziny",
+        "Witaj, czym mogę się dla Ciebie zająć?",
+        "Witaj, w czym mogę pomóc?",
+        "Cześć! Jak mogę Ci pomóc?",
+        "Dzień dobry! Jak mogę Ci służyć?",
+        "Witaj! Co przynosi Ci tutaj?",
+        "Hej, jak mogę być pomocny?",
+        "Miło Cię widzieć! Jakie masz pytania?",
+        "Cześć! W czym mogę Ci pomóc?",
+        "Witaj! Czego szukasz?",
+        "Witam! Jak mogę Cię wesprzeć?",
+        "Dobry dzień! W czym mogę Ci pomóc?",
+        "Cześć! Cieszy mnie Twoja obecność. Jak mogę pomóc?",
+        "Hej, jestem tutaj, aby odpowiadać na Twoje pytania.",
+        "Witaj! Jestem gotów, aby Ci pomóc.",
+        "Cześć! Jak mogę ułatwić Ci życie?",
+        "Dzień dobry! Jak mogę wprowadzić Cię w świat informacji?",
+        "Miło Cię spotkać! W czym mogę Ci pomóc?",
+        "Witam! Czy jest coś, czego potrzebujesz?",
+        "Cześć! Jak mogę sprawić, żeby Twój dzień był lepszy?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Jakie produkty macie?",
+        "Jakie rodzaje produktów są dostępne?",
+        "Co sprzedajecie?",
+        "Czy macie inne produkty niż myszki komputerowe?",
+        "Czy oferujecie również inne akcesoria komputerowe?"
+      ],
+      "responses": [
+        "Sprzedajemy myszki komputerowe",
+        "Mamy myszki komputerowe",
+        "Tak, mamy również inne produkty, takie jak klawiatury, słuchawki i podkładki pod mysz",
+        "Oferujemy szeroki wybór akcesoriów komputerowych, w tym myszki, klawiatury, słuchawki i podkładki pod mysz"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": ["Delivery takes 2-4 days", "Shipping takes 2-4 days"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
