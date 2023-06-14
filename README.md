@@ -1,3 +1,9 @@
+Sposób działania i trening chatbota
+Chatbot w tym API oparty jest na architekturze modelu NeuralNet, który został wytrenowany na podstawie pliku intents.json. Chatbot jest w stanie rozpoznawać różne tagi, takie jak "hello", "goodbye", "thanks" itp., i generować odpowiednie odpowiedzi na podstawie zdefiniowanych wzorców.Api rownież proponuje produkty na zapytania do bota na podstawie informacji z bazy danych.
+
+
+
+
 
 Clone repo and create a virtual environment
 ```
