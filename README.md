@@ -1,13 +1,3 @@
-# Chatbot Deployment with Flask and JavaScript
-
-In this tutorial we deploy the chatbot I created in [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
-
-This gives 2 deployment options:
-- Deploy within Flask app with jinja2 template
-- Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
-
-## Initial Setup:
-This repo currently contains the starter files.
 
 Clone repo and create a virtual environment
 ```
@@ -38,15 +28,126 @@ the following command to test it in the console.
 $ (venv) python chat.py
 ```
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
+Endpointy
+GET /
+Endpoint: /
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
+Metoda: GET
 
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
+Opis: Główny endpoint aplikacji. Zwraca wiadomość potwierdzającą, że aplikacja działa poprawnie.
 
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
+Przykładowy zapytanie:
+
+arduino
+Copy code
+GET http://localhost:5000/
+Przykładowa odpowiedź:
+
+json
+Copy code
+{
+  "message": "dziala"
+}
+POST /bot
+Endpoint: /bot
+
+Metoda: POST
+
+Opis: Endpoint do komunikacji z chatbotem. Przyjmuje wiadomość w formacie JSON, zawierającą pole message z treścią wiadomości od użytkownika. Zwraca odpowiedź chatbota w formacie JSON. Jeśli tag odpowiedzi to theBestProduct, zostanie również zwrócony najlepiej oceniany produkt.
+
+Przykładowe zapytanie:
+
+json
+Copy code
+POST http://localhost:5000/bot
+
+{
+  "message": "Dzień dobry!"
+}
+Przykładowa odpowiedź:
+
+json
+Copy code
+{
+  "message": "Witaj!", 
+  "tag": "hello"
+}
+
+GET /api/products
+Endpoint: /api/products
+
+Metoda: GET
+
+Opis: Endpoint do pobierania informacji o wszystkich produktach. Zwraca listę produktów w formacie JSON.
+
+Przykładowe zapytanie:
+
+bash
+Copy code
+GET http://localhost:5000/api/products
+Przykładowa odpowiedź:
+
+json
+Copy code
+{
+  "products": [
+    {
+      "ID": 1,
+      "Marka": "Samsung",
+      "Model": "Galaxy S20",
+      "Zdjecie": "s20.jpg",
+      "Cena": 1999.99,
+      "Opis": "Super smartfon z doskonałą kamerą."
+    },
+    {
+      "ID": 2,
+      "Marka": "Apple",
+      "Model": "iPhone 12",
+      "Zdjecie": "iphone12.jpg",
+      "Cena": 2499.99,
+      "Opis": "Najnowszy model iPhone'a."
+    }
+  ]
+}
+GET /api/product/theBest
+Endpoint: /api/product/theBest
+
+Metoda: GET
+
+Opis: Endpoint do pobierania informacji o najlepiej ocenianym produkcie. Zwraca informacje o produkcie w formacie JSON.
+
+Przykładowe zapytanie:
+
+bash
+Copy code
+GET http://localhost:5000/api/product/theBest
+Przykładowa odpowiedź:
+
+json
+Copy code
+{
+  "product": {
+    "ID": 3,
+    "Marka": "Sony",
+    "Model": "PlayStation 5",
+    "Zdjecie": "ps5.jpg",
+    "Cena": 2499.99,
+    "Opis": "Najnowsza konsola do gier."
+  }
+}
+Baza danych
+API wykorzystuje bazę danych SQLite, w której przechowywane są informacje o produktach i ocenach. Tabela Produkty zawiera informacje o produktach, a tabela Oceny zawiera informacje o ocenach produktów. Poniżej znajduje się struktura tabel:
+
+Tabela Produkty
+ID - identyfikator produktu (liczba całkowita)
+Marka - marka produktu (łańcuch znaków)
+Model - model produktu (łańcuch znaków)
+Zdjecie - nazwa pliku ze zdjęciem produktu (łańcuch znaków)
+Cena - cena produktu (liczba zmiennoprzecinkowa)
+Opis - opis produktu (tekst)
+Tabela Oceny
+ID - identyfikator oceny (liczba całkowita)
+Nick - pseudonim użytkownika, który wystawił ocenę (łańcuch znaków)
+ID_Klienta - identyfikator klienta (liczba całkowita)
+Ocena - ocena produktu (liczba całkowita)
+ID_Produktu - identyfikator ocenianego produktu (liczba całkowita, klucz obcy dla tabeli Produkty)
