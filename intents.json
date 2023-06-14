@@ -5,111 +5,174 @@
       "patterns": [
         "Witam",
         "Siema",
-        "Hejka",
-        "Dzień doberek",
-        "Czołem",
-        "Cześć wszystkim",
-        "Wesołych witerek",
+        "Hej",
+        "Dzien dobry",
+        "Czolem",
+        "Czesc wszystkim",
+        "Wesoly dzien",
         "Witajcie",
-        "Dobry wieczór",
-        "Miło cię widzieć",
-        "Witaj na pokładzie",
-        "Dobry dzień",
-        "Dzień dobry wszystkim",
+        "Dobry wieczor",
+        "Milo cie widziec",
+        "Witaj na pokladzie",
+        "Dobry dzien",
+        "Dzien dobry wszystkim",
         "Dobry ranek",
         "Witaj serdecznie",
-        "Miłego dnia",
+        "Milego dnia",
         "Hej, co tam u ciebie?",
         "Witam wszystkich serdecznie",
-        "Cześć, jak minął ci dzień?",
-        "Dzień dobry, mam nadzieję, że masz wspaniały dzień"
+        "Czesc, jak minal ci dzien?",
+        "Dzien dobry, mam nadzieje, ze masz wspanialy dzien"
       ],
       "responses": [
         "Hej :-)",
-        "Cześć, dzięki za odwiedziny",
-        "Witaj, czym mogę się dla Ciebie zająć?",
-        "Witaj, w czym mogę pomóc?",
-        "Cześć! Jak mogę Ci pomóc?",
-        "Dzień dobry! Jak mogę Ci służyć?",
+        "Czesc, dzieki za odwiedziny",
+        "Witaj, czym moge sie dla Ciebie zajac?",
+        "Witaj, w czym moge pomoc?",
+        "Czesc! Jak moge Ci pomoc?",
+        "Dzien dobry! Jak moge Ci sluzyc?",
         "Witaj! Co przynosi Ci tutaj?",
-        "Hej, jak mogę być pomocny?",
-        "Miło Cię widzieć! Jakie masz pytania?",
-        "Cześć! W czym mogę Ci pomóc?",
+        "Hej, jak moge byc pomocny?",
+        "Milo Cie widziec! Jakie masz pytania?",
+        "Czesc! W czym moge Ci pomoc?",
         "Witaj! Czego szukasz?",
-        "Witam! Jak mogę Cię wesprzeć?",
-        "Dobry dzień! W czym mogę Ci pomóc?",
-        "Cześć! Cieszy mnie Twoja obecność. Jak mogę pomóc?",
+        "Witam! Jak moge Cie wesprzec?",
+        "Dobry dzien! W czym moge Ci pomoc?",
+        "Czesc! Cieszy mnie Twoja obecnosc. Jak moge pomoc?",
         "Hej, jestem tutaj, aby odpowiadać na Twoje pytania.",
-        "Witaj! Jestem gotów, aby Ci pomóc.",
-        "Cześć! Jak mogę ułatwić Ci życie?",
-        "Dzień dobry! Jak mogę wprowadzić Cię w świat informacji?",
-        "Miło Cię spotkać! W czym mogę Ci pomóc?",
-        "Witam! Czy jest coś, czego potrzebujesz?",
-        "Cześć! Jak mogę sprawić, żeby Twój dzień był lepszy?"
+        "Witaj! Jestem gotów, aby Ci pomoc.",
+        "Czesc! Jak moge ulatwic Ci zycie?",
+        "Dzien dobry! Jak moge wprowadzic Cie w swiat informacji?",
+        "Milo Cie spotkac! W czym moge Ci pomoc?",
+        "Witam! Czy jest cos, czego potrzebujesz?",
+        "Czesc! Jak moge sprawic, zeby Twoj dzien byl lepszy?"
       ]
     },
+
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Żegnaj", "Do zobaczenia później", "Do widzenia"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Do zobaczenia później, dziękuję za wizytę",
+        "Miłego dnia",
+        "Żegnaj! Wróć szybko."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": ["Dzięki", "Dziękuję", "To pomocne", "Bardzo dziękuję!"],
+      "responses": [
+        "Cieszę się, że mogłem pomóc!",
+        "Zawsze do usług!",
+        "To moja przyjemność"
+      ]
     },
     {
       "tag": "items",
       "patterns": [
         "Jakie produkty macie?",
-        "Jakie rodzaje produktów są dostępne?",
+        "Jakie rodzaje produktow sa dostepne?",
         "Co sprzedajecie?",
-        "Czy macie inne produkty niż myszki komputerowe?",
-        "Czy oferujecie również inne akcesoria komputerowe?"
+        "Czy macie inne produkty niz myszki komputerowe?",
+        "Czy oferujecie równiez inne akcesoria komputerowe?"
       ],
       "responses": [
         "Sprzedajemy myszki komputerowe",
         "Mamy myszki komputerowe",
-        "Tak, mamy również inne produkty, takie jak klawiatury, słuchawki i podkładki pod mysz",
-        "Oferujemy szeroki wybór akcesoriów komputerowych, w tym myszki, klawiatury, słuchawki i podkładki pod mysz"
+        "Tak, mamy równiez inne produkty, takie jak klawiatury, sluchawki i podkladki pod mysz",
+        "Oferujemy szeroki wybor akcesoriów komputerowych, w tym myszki, klawiatury, sluchawki i podkladki pod mysz"
       ]
     },
     {
       "tag": "payments",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Czy akceptujecie karty kredytowe?",
+        "Czy akceptujecie Mastercard?",
+        "Czy moge zaplacic przez Paypal?",
+        "Czy akceptujecie tylko gotowke?",
+        "Jakie metody platnosci akceptujecie?",
+        "Czy przyjmujecie platnosci karta?",
+        "Czy mozna zaplacic za pomoca Apple Pay?",
+        "Czy akceptujecie platnosci zbliżeniowe?",
+        "Czy akceptujecie platnosci przelewem bankowym?",
+        "Czy moge zaplacic gotówką lub karta?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Akceptujemy platnosci karta kredytowa, przelewem bankowym oraz BLIK.",
+        "Akceptujemy platnosci karta, przelewem bankowym oraz BLIK."
       ]
     },
     {
       "tag": "delivery",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": ["Delivery takes 2-4 days", "Shipping takes 2-4 days"]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Ile czasu trwa dostawa?",
+        "Ile czasu zajmuje wysylka?",
+        "Kiedy moge spodziewac sie dostawy?",
+        "Czy dostawa jest szybka?",
+        "Czy wysylka jest ekspresowa?",
+        "Czy przesylka dochodzi w ciagu kilku dni?",
+        "Czy dostawa jest realizowana w weekendy?",
+        "Czy czas dostawy jest uzalezniony od lokalizacji?",
+        "Czy jest mozliwosc przyspieszenia dostawy?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Dostawa trwa zwykle od 2 do 4 dni",
+        "Wysylka zajmuje okolo 2-4 dni"
+      ]
+    },
+    {
+      "tag": "theBestProduct",
+      "patterns": [
+        "Jaki jest najlepszy produkt w waszym sklepie?",
+        "Czy możecie polecic jakiś najlepszy produkt?",
+        "Który produkt jest najbardziej polecany?",
+        "Czy macie jakis topowy produkt?"
+      ],
+      "responses": [
+        "Nasz najlepszy produkt. Wyroznia sie doskonala jakoscia i funkcjonalnoscia.",
+        "Polecamy {Nazwa produktu} jako nasz najlepszy produkt. Klienci uwielbiaja jego wydajnosc i trwalosc.",
+        "Jesli szukasz najlepszego produktu, to warto zwrócic uwage na {Nazwa produktu}. To nasz bestseller i zyskal wiele pozytywnych opinii."
+      ]
+    },
+    {
+      "tag": "theMostSellingProduct",
+      "patterns": [
+        "Który produkt jest najbardziej popularny?",
+        "Czy macie jakis najczesciej kupowany produkt?",
+        "Który produkt sprzedaje sie najlepiej?"
+      ],
+      "responses": [
+        "Naszym najbardziej popularnym produktem jest {Nazwa produktu}. Klienci go uwielbiaja!",
+        "{Nazwa produktu} to nasz najlepiej sprzedajacy sie produkt. Zyskal ogromne zainteresowanie i doskonale opinie.",
+        "Najczesciej kupowanym produktem w naszym sklepie jest {Nazwa produktu}. To prawdziwy hit sprzedazy!"
+      ]
+    },
+
+    {
+      "tag": "technicalSupport",
+      "patterns": [
+        "Mam problem z produktem. Co powinienem zrobic?",
+        "Potrzebuje pomocy technicznej",
+        "Czy oferujecie wsparcie techniczne?",
+        "Jak moge skontaktowac sie z dzialem pomocy technicznej?"
+      ],
+      "responses": [
+        "Oferujemy wsparcie techniczne. Mozesz skontaktowac sie z nami przez formularz kontaktowy na naszej stronie internetowej lub dzwonic pod numer {Numer telefonu}.",
+        "Jestesmy tutaj, aby Ci pomoc! Skontaktuj sie z naszym dzialem pomocy technicznej pod numerem {Numer telefonu} lub wyslij zapytanie przez formularz kontaktowy na naszej stronie internetowej."
+      ]
+    },
+    {
+      "tag": "shippingCost",
+      "patterns": [
+        "Ile kosztuje dostawa?",
+        "Czy musze placic za wysylke?",
+        "Czy macie darmowa wysylke?",
+        "Czy jestem zobowiazany do zaplacenia kosztów wysylki?"
+      ],
+      "responses": [
+        "Koszt dostawy zalezy od wagi i lokalizacji. Mozesz sprawdzic koszt dostawy podczas skladania zamówienia.",
+        "Koszt dostawy jest zalezny od wagi i adresu dostawy. Mozesz obliczyc koszt dostawy na naszej stronie internetowej przed finalizacja zamówienia.",
+        "Mamy rozne opcje dostawy o roznym koszcie. Mozesz sprawdzic koszty dostawy w trakcie skladania zamówienia."
       ]
     }
   ]

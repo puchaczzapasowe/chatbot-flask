@@ -43,9 +43,9 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                return json.dumps({'message':random.choice(intent['responses']),"tag":tag})
+                return {'message':random.choice(intent['responses']),"tag":tag}
     
-    return json.dumps({'message':"nie rozumiem polecenia","tag":tag})
+    return {'message':"nie rozumiem polecenia","tag":tag}
 
 
 if __name__ == "__main__":
